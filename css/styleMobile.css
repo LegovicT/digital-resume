@@ -1,0 +1,182 @@
+@media screen and (max-width: 767px) 
+{
+    /**** Overview ****/
+    html
+    {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body
+    {
+        background-repeat: repeat-y;
+        display: flex;
+        flex-direction: column;
+        background-size: 500%;
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+        font-size: medium;
+    }
+    header
+    {
+        background-image: url('../img/bg.gif'); 
+        background-size: 200%;
+        background-attachment: fixed;
+        background-position-x: 0px;
+        background-color: rgba(16, 16, 16, 0.2);
+        
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+    }
+    main
+    {
+        flex-direction: column;
+        padding: 2px;
+        margin: 2px;
+        width: 98%;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 98%;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article
+    {
+        justify-content: center;
+        align-content: center;
+        margin: 5px;
+        padding: 2px;
+        width: 98%;
+    }
+    section
+    {
+        width: 98%;
+        padding: 2px;
+        margin: 2px;
+        padding-bottom: 30px;
+    }
+    nav div
+    {
+        justify-content: center;
+        align-content: center;
+    }
+
+    
+    /**** Widgets ****/
+    #presentation
+    {
+        display: block;
+        position: relative;
+        margin: 2px;
+    }
+    #presentation article
+    {
+        margin: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #presentation ul
+    {
+        margin: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: block;
+    }
+    #presentation li
+    {
+        margin: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #projects
+    {
+        display: grid;
+        position: relative;
+        left: 0px;
+    }
+    #skills
+    {
+        display: grid;
+        position: relative;
+        left: 0px;
+    }
+    #aboutMe
+    {
+        display: block;
+        position: relative;
+        left: 0px;
+    }
+
+
+    /**** tables ****/
+    table
+    {
+        width: 98%;
+    }
+    #skills tr
+    {
+        width: 98%;
+        margin: 0px;
+        padding: 0px;
+        flex-grow: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+    #skills th
+    {
+        width: 98%;
+        margin: 0px;
+        padding: 0px;
+        flex: 8;
+        flex-grow: 42%;
+        min-width: 42%;
+        max-width: 42%;
+    }
+    #projects tr
+    {
+        width: 98%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #projects th
+    {
+        width: 98%;
+        margin: 0px;
+        padding: 0px;
+        flex: 8;
+        flex-grow: 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+
+    /**** Imgs ****/
+    #skills h4
+    {
+        display: flex;
+    }
+    .ico
+    {
+        display: none;
+    }
+
+
+    /**** Links ****/
+    .goback
+    {
+        display: none;
+    }
+}

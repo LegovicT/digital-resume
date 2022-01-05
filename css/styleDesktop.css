@@ -1,0 +1,544 @@
+
+/****Overview****/
+body
+{
+    background-image: url('../img/front.gif');
+    background-color: #cccccc;
+    background-attachment: scroll;
+    background-size: 200%;
+    background-position-y: 50%;
+    background-repeat: repeat-x;
+    font-family: Raleway;
+    
+    overflow-x: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 98%;
+    font-size: larger;
+}
+header
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+
+    background-color: rgba(16, 16, 32, 0.7);
+    border: 5px double rgb(32, 32, 64);
+    border-radius: 10px;
+    border-bottom: 8px ridge rgb(64, 64, 127);
+    border-right: 8px ridge rgb(64, 64, 127);
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    
+    font-family: 'Orbitron', sans-serif;
+}
+footer
+{
+    display: none;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    
+    border: 5px double rgb(32, 32, 64);
+    border-radius: 10px;
+    border-bottom: 8px ridge rgb(64, 64, 127);
+    border-right: 8px ridge rgb(64, 64, 127);
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    background-color: rgba(16, 16, 64, 0.9);
+    color: rgb(127, 127, 255);
+    opacity: 90%;
+    
+    font-family: 'Orbitron', sans-serif;
+}
+main
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+section
+{
+    border: 3px double rgb(32, 32, 64);
+    border-radius: 10px;
+    border-bottom: 6px ridge rgb(64, 64, 127);
+    border-right: 6px ridge rgb(64, 64, 127);
+    border-bottom-right-radius: 80px;
+    border-top-left-radius: 80px;
+    background-color: rgba(16, 16, 64, 0.9);
+    color: rgb(176, 176, 255);
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    width: 100%;
+}
+
+
+/****Details****/
+abbr
+{
+    color: rgb(127, 127, 255);
+}
+h1
+{
+    font-weight: 900;
+    font-size: 40px;
+    color: rgb(160, 160, 255);
+    font-family: 'Orbitron', sans-serif;
+}
+h2
+{
+    color: rgb(127, 127, 255);
+    border-bottom: 5px double rgb(64, 64, 160);
+    border-radius: 500px;
+    background-color: rgba(16, 16, 128, 0);
+    width: 100%;
+    padding: 0px;
+    filter: drop-shadow(0px 0px 10px rgba(64, 64, 255, 1));
+    font-family: 'Orbitron', sans-serif;
+}
+table h2
+{
+    color: rgb(86, 86, 127);
+    font-family: 'Orbitron', sans-serif;
+}
+h3
+{
+    color: rgb(127, 127, 255);
+    font-family: 'Orbitron', sans-serif;
+}
+h4
+{
+    color: rgb(64, 64, 210);
+}
+#img
+{
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../img/PhotoMoi.jpg");
+    background-size: 100%;
+    background-position-y: -10px;
+    width: 150px;
+    height: 150px;
+    border: 15px groove rgb(84, 84, 124);
+    border-radius: 200px;
+    animation: imgAnim 2s infinite;
+}
+
+
+/**** widgets ****/
+article
+{
+    margin: 1px;
+}
+table
+{
+    margin: 0px;
+    padding: 0px;
+    flex: 4;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+}
+#presentation
+{
+    position: fixed;
+    top:0px;
+    display: none;
+    /*right: -100%;*/
+}
+#presentation ul
+{
+    padding: 5px;
+    display: flex;
+    border-radius: 4px;
+    border-bottom: 4px ridge rgb(64, 64, 127);
+    filter: drop-shadow(0px 0px 20px rgba(176, 176, 255, 1));
+}
+#presentation li
+{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#projects
+{
+    position: fixed;
+    top:0px;
+    display: none;
+    /*bottom: -100%;*/
+}
+#projects th
+{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 4px;
+    border-bottom: 4px ridge rgb(64, 64, 127);
+    filter: drop-shadow(0px 0px 20px rgba(176, 176, 255, 1));
+}
+#skills
+{
+    position: fixed;
+    top: 0px;
+    display: none;
+    width: 98%;
+    /*left: -100%;*/
+    flex-direction: column;
+}
+#skills table
+{
+    flex-direction: row;
+    display: flex;
+    flex-flow: column wrap;
+    width: 98%;
+    height: max-content;
+}
+#skills tr
+{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    flex-flow: row wrap;
+    width: 98%;
+    border-radius: 4px;
+    border-bottom: 4px ridge rgb(64, 64, 127);
+    filter: drop-shadow(0px 0px 20px rgba(176, 176, 255, 0.2));
+}
+#skills th
+{
+    width: 98%;
+    margin: 1px;
+    padding: 1px;
+    flex: 8;
+    flex-grow: 13%;
+    min-width: 15%;
+    max-width: 15%;
+}
+#skills .titleTab
+{
+    flex: 1;
+    flex-grow: 98%;
+    min-width: 98%;
+    max-width: 98%;
+}
+#aboutMe
+{
+    position: fixed;
+    top:0px;
+    display: none;
+    /*top: -100%;*/
+}
+
+
+
+/****Headers tab****/
+nav table
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav tbody
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+nav table th
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+nav table tr
+{
+    flex-direction: column;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+ul
+{
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+
+
+/**** Links ****/
+a
+{
+    text-decoration: none;
+} 
+a h3
+{
+    border: 2px double rgba(124, 84, 84, 0.5);
+    background-color: rgba(64, 16, 16, 0.2);
+    border-radius: 200px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    color: rgb(255, 160, 160);
+    filter: drop-shadow(0px 0px 10px rgba(255, 160, 160, 1));
+}
+header a h3
+{
+    border: 5px double rgb(84, 84, 124);
+    border-radius: 200px;
+    background-color: rgba(16, 16, 64, 0.9);
+    width: 100%;
+    padding: 8px;
+    color: rgb(160, 160, 255);
+    filter: drop-shadow(16px 16px 20px rgba(32, 32, 86, 1));
+    font-family: 'Orbitron', sans-serif;
+}
+footer a h3
+{
+    border: 2px double rgba(160, 160, 255, 0.5);
+    border-radius: 200px;
+    background-color: rgba(32, 32, 125, 0.2);
+    width: 100%;
+    padding: 8px;
+    color: rgb(220, 220, 255);
+    filter: drop-shadow(0px 0px 5px rgba(64, 64, 255, 1));
+} 
+.goback
+{
+    font-family: 'Press Start 2P', cursive;
+}
+
+/**** Progress Bars ****/
+.backbar
+{
+    justify-content: center;
+    align-content: center;
+    border: 5px double rgb(32, 32, 128);
+    border-radius: 100px;
+    background-color:rgb(84, 84, 124);
+    height:24px;
+    width:100%;
+    margin: 5px;
+    padding-bottom: 1px;
+}
+.frontbar
+{
+    border: 2px double rgb(32, 32, 96);
+    border-radius: 100px;
+    background-color:rgb(128, 128, 255);
+    height:22px;
+    width:10%;
+    filter: drop-shadow(8px 0px 10px rgba(128, 128, 255, 1));
+}
+
+/**** Images & Icons ****/
+.show
+{
+    background-color: rgba(64, 64, 16, 0.2);
+    border: 2px double rgba(124, 124, 84, 0.5);
+    border-radius: 200px;
+    color: rgb(255, 255, 160);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 160, 1));
+    width: 25%;
+    font-family: 'Orbitron', sans-serif;
+}
+.show:hover
+{
+    background-color: rgba(124, 124, 32, 0.4);
+    border: 2px double rgba(255, 255, 124, 0.6);
+    border-radius: 200px;
+    color: rgb(255, 255, 160);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 160, 1));
+}
+.show h3
+{
+    color: rgb(255, 255, 160);
+    font-size: x-large;
+}
+.illus
+{
+    display: flex;
+    border: 2px double rgba(255, 255, 160, 1);
+    border-radius: 50px;
+    width: 0px;
+    height: 0px;
+}
+#musician
+{
+    background-image: url('../img/concert.JPG');
+    background-size: 100%;
+}
+#sportsman
+{
+    background-image: url('../img/compet.bmp');
+    background-size: 100%;
+    background-position-y: -20px;
+}
+#skills h4
+{
+    display: none;
+}
+.ico
+{
+    border: 1px double rgba(255, 255, 160, 1);
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 160, 1));
+    margin: 2px;
+    border-radius: 10px;
+    max-width: 80px;
+    min-width: 20px;
+    max-height: 80px;
+    min-height: 20px;
+}
+.ico:hover
+{
+    border: 2px double rgba(255, 255, 210, 1);
+    margin: 0px;
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 210, 1));
+}
+
+/**** Animations ****/
+a h3:hover
+{
+    animation: aHover 2s 3;
+}
+header a h3:hover
+{
+   animation: linkHover 2s 3;
+}
+@keyframes aHover
+{
+    0%
+    {
+        color: rgb(180, 160, 255);
+    } 
+    25%
+    {
+        color: rgb(200, 160, 255);
+    }
+    50%
+    {
+        color: rgb(220, 160, 255);
+    }
+    75%
+    {
+        color: rgb(200, 160, 255);
+    }
+    100%
+    {
+        color: rgb(180, 160, 255);
+    }
+}
+
+@keyframes linkHover
+{
+    0%
+    {
+        border: 5px double rgb(104, 84, 124);
+        background-color: rgba(36, 16, 64, 0.9);
+        color: rgb(180, 160, 255);
+        filter: drop-shadow(20px 20px 20px rgba(52, 32, 86, 1));
+    } 
+    25%
+    {
+        border: 5px double rgb(124, 84, 124);
+        background-color: rgba(56, 16, 64, 0.9);
+        color: rgb(200, 160, 255);
+        filter: drop-shadow(20px 20px 20px rgba(72, 32, 86, 1));
+    }
+    50%
+    {
+        border: 5px double rgb(144, 84, 124);
+        background-color: rgba(76, 16, 64, 0.9);
+        color: rgb(220, 160, 255);
+        filter: drop-shadow(20px 20px 20px rgba(92, 32, 86, 1));
+    }
+    75%
+    {
+        border: 5px double rgb(124, 84, 124);
+        background-color: rgba(56, 16, 64, 0.9);
+        color: rgb(200, 160, 255);
+        filter: drop-shadow(20px 20px 20px rgba(72, 32, 86, 1));
+    }
+    100%
+    {
+        border: 5px double rgb(104, 84, 124);
+        background-color: rgba(36, 16, 64, 0.9);
+        color: rgb(180, 160, 255);
+        filter: drop-shadow(20px 20px 20px rgba(52, 32, 86, 1));
+    }
+}
+
+@keyframes imgAnim
+{
+    0%
+    {
+        filter: drop-shadow(4px 4px 10px rgba(64, 64, 125, 1));
+    }
+    10%
+    {
+        filter: drop-shadow(0px 4px 10px rgba(64, 64, 125, 1));
+    }
+    20%
+    {
+        filter: drop-shadow(-4px 4px 10px rgba(64, 64, 125, 1));
+    }
+    30%
+    {
+        filter: drop-shadow(-4px 0px 10px rgba(64, 64, 125, 1));
+    }
+    40%
+    {
+        filter: drop-shadow(-4px -4px 10px rgba(64, 64, 125, 1));
+    }
+    50%
+    {
+        filter: drop-shadow(0px -4px 10px rgba(64, 64, 125, 1));
+    }
+    60%
+    {
+        filter: drop-shadow(4px -4px 10px rgba(64, 64, 125, 1));
+    }
+    70%
+    {
+        filter: drop-shadow(4px 0px 10px rgba(64, 64, 125, 1));
+    }
+    80%
+    {
+        filter: drop-shadow(4px 4px 10px rgba(64, 64, 125, 1));
+    }
+    90%
+    {
+        filter: drop-shadow(0px 0px 20px rgba(64, 64, 125, 1));
+    }
+    100%
+    {
+        filter: drop-shadow(0px 0px 10px rgba(64, 64, 125, 1));
+    }
+}

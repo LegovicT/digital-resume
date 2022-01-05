@@ -1,0 +1,169 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) 
+{
+    /**** Overview ****/
+    html
+    {
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body
+    {
+        background-repeat: repeat-y;
+        background-size: 500%;
+        background-position-y: -25%;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+        padding-left: auto;
+        padding-right: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 98%;
+    }
+    header
+    {
+        background-image: url('../img/bg.gif'); 
+        background-size: 200%;
+        position: relative;
+        width: 98%;
+        padding: 0px;
+        margin: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(16, 16, 16, 0.5);
+    }
+    main
+    {
+        position: relative;
+        flex-direction: column;
+        padding: 2px;
+        margin: 2px;
+        width: 98%;
+    }
+    footer
+    {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article
+    {
+        position: relative;
+        margin: 5px;
+        width: 98%;
+        justify-content: center;
+    }
+    section
+    {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 100%;
+        align-content: stretch;
+        padding-bottom: 30px;
+    }
+
+    
+    /**** Widgets ****/
+    #presentation
+    {
+        display: block;
+        position: relative;
+        margin: 2px;
+        width: 90%;
+    }
+    #projects
+    {
+        display: grid;
+        position: relative;
+        left: 0px;
+        width: 90%;
+    }
+    #skills
+    {
+        display: grid;
+        position: relative;
+        left: 0px;
+        width: 90%;
+    }
+    #aboutMe
+    {
+        display: block;
+        position: relative;
+        left: 0px;
+        width: 90%;
+    }
+    
+    
+    /**** tables ****/
+    #skills tr
+    {
+        margin: 0px;
+        padding: 2px;
+        flex-grow: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 50px;
+    }
+    #skills th
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+        padding: 0px;
+        flex: 4;
+        flex-grow: 20%;
+        min-width: 20%;
+        max-width: 20%;
+    }
+    #projects tr
+    {
+        width: 98%;
+        margin: 0px;
+        padding: 0px;
+    }
+    #projects th
+    {
+        width: 98%;
+        margin: 2px;
+        padding: 2px;
+        flex: 8;
+        flex-grow: 50%;
+        min-width: 50%;
+        max-width: 50%;
+        
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 50px;
+    }
+    #presentation ul
+    {
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 50px;
+    }
+
+
+    /**** Imgs ****/
+    #skills h4
+    {
+        display: flex;
+    }
+    .ico
+    {
+        display: none;
+    }
+    
+
+    /**** Links ****/
+    .goback
+    {
+        display: none;
+    }
+}
